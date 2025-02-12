@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .outer {
+        font-size: 32px;
+      }
+      .inner {
+        font-size: 2rem;
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        background-color: tomato;
+        padding: 1em;
+        margin: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    em : 부모 요소의 글꼴 크기
+    rem : 루트 (최상위 html) 요소의 글꼴 크기
+
+    em 으로 내, 외부 여백 크기를 정할 때는 부모 요소가 아닌 자신 기준
+    -->
+    <div class="outer">
+      <div class="inner">푸린</div>
+    </div>
+  </body>
+</html>
