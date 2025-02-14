@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .player {
+        /* width / height */
+        padding-top: 56.25%;
+        position: relative; /* 자기 원래 위치 (기본 위치) 를 기본으로 이동 */
+      }
+      iframe {
+        position: absolute;
+        /* 부모 중 relative, absolute, fixed가 적용된 가장 가까운 요소를 기준으로 이동 (없으면 body) */
+        /* 원래 있던 자리 공간이 사라지기 때문에 다른 요소가 차지할 수 있음 */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="player">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/gY5TgD-yRPI?si=qSyWZU8fpMAT_L6b"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </body>
+</html>
