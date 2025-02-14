@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 50%;
+      }
+      img {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img
+        src="https://i.namu.wiki/i/VMIHkLm6DcUT4d9-vN4yFw7Yfitr8luT_U2YwJsugGodCQ01ooGH_kHX0D6sJ3HDS1YHfvy9B81al8rKCxqKYw.webp"
+      />
+    </div>
+    <!-- picture 태그로 이미지를 반응형으로 불러 올 수 있음 -->
+    <picture>
+      <source
+        srcset="https://cdn.imweb.me/thumbnail/20230228/25687782da912.png"
+        media="(min-width: 800px)"
+      />
+      <img
+        src="https://i.namu.wiki/i/VMIHkLm6DcUT4d9-vN4yFw7Yfitr8luT_U2YwJsugGodCQ01ooGH_kHX0D6sJ3HDS1YHfvy9B81al8rKCxqKYw.webp"
+      />
+    </picture>
+  </body>
+</html>
