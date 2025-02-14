@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 200px;
+        height: 120px;
+      }
+
+      /*
+      미디어 타입과 쿼리
+      min-width : 디스플레이 영역의 최소 너비
+      max-width : 디스플레이 영역의 최대 너비
+      min-height : 디스플레이 영역의 최소 높이
+      max-height : 디스플레이 영역의 최대 높이
+
+      orientation : portrait 또는 landscape 감지
+      color : 기기의 색상당 비트 수
+      color-index : 출력 기기의 색상 테이블 수
+      aspect-ratio : 디스플레이 영역의 너비와 높이의 비율
+
+      link 태그에 미디어 쿼리를 추가하거나, @import 구문을 이용한 추가가 가능
+      */
+
+      @media screen and (min-width: 800px) {
+        /* width 도 가능하지만 잘 사용하지 않음 */
+        /* 800px 이상일 경우에만 적용됨 */
+        img {
+          width: 400px;
+          height: 240px;
+        }
+      }
+
+      @media screen and (min-width: 1000px) {
+        /* 1200px 이상일 경우에만 적용됨 (다중 설정 가능) */
+        img {
+          width: 600px;
+          height: 360px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 미디어 쿼리 
+     미디어 타입을 인식하고, 콘텐츠를 읽어들이는 기기나 브라우저의
+     물리적 속성을 감지할 수 있는 장치(기능) -->
+    <img src="https://cdn.imweb.me/thumbnail/20230228/25687782da912.png" />
+  </body>
+</html>
